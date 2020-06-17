@@ -16,15 +16,15 @@ if(!$enableSandbox){
     $paypalConfig = [
         'client_id' => '<production_client_id>',
         'client_secret' => '<production_client_secret>',
-        'return_url' => "http://".$_SERVER["HTTP_HOST"]."/payments/execute_purchase?success=true",//&activator=$activator&PaymentTypeID=$paymenttypeid&PaymentAmount=$price",
-        'cancel_url' => "http://".$_SERVER["HTTP_HOST"]."/payments/execute_purchase?success=false"
+        'return_url' => "http://".$_SERVER["HTTP_HOST"]."/execute_purchase.php?success=true",//&activator=$activator&PaymentTypeID=$paymenttypeid&PaymentAmount=$price",
+        'cancel_url' => "http://".$_SERVER["HTTP_HOST"]."/execute_purchase.php?success=false"
     ];
 } else {
     $paypalConfig = [
         'client_id' => '<sandbox_client_id>',
         'client_secret' => '<sandbox_client_secret>',
-        'return_url' => "http://".$_SERVER["HTTP_HOST"]."/payments/execute_purchase?success=true",//&activator=$activator&PaymentTypeID=$paymenttypeid&PaymentAmount=$price",
-        'cancel_url' => "http://".$_SERVER["HTTP_HOST"]."/payments/execute_purchase?success=false"
+        'return_url' => "http://".$_SERVER["HTTP_HOST"]."/execute_purchase.php?success=true",//&activator=$activator&PaymentTypeID=$paymenttypeid&PaymentAmount=$price",
+        'cancel_url' => "http://".$_SERVER["HTTP_HOST"]."/execute_purchase?success=false"
     ];
 }
 
