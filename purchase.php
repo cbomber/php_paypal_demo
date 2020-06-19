@@ -15,7 +15,7 @@ require 'bootstrap.php';
 $activator = $_GET["activator"];
 $invoiceNumber = uniqid();
 
-$price = 300;
+$price = 2;
 $description = "Product Description";
 $item = 'Item';
 $quantity = 1;
